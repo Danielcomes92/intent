@@ -7,8 +7,8 @@
     {
       "name": "intent",
       "source": "./",
-      "description": "Intent spec before coding, intent-aware review before merging."
+      "description": "Intent spec before coding, intent-aware review before merging: Gherkin scenarios from the ticket, then /code-review with that brief, common checks and an evidence filter."
     }
   ],
-  "description": "Intent-aware code review for Claude Code: a Gherkin brief before /code-review and an evidence filter after it."
+  "description": "Intent spec before coding, intent-aware review before merging: Gherkin scenarios from the ticket, then /code-review with that brief, common checks and an evidence filter."
 }

@@ -1,6 +1,6 @@
 # Brief template
 
-If the ticket has an **Intent spec** comment (from `/intent-spec`), use its scenarios, out-of-scope list and "Already decided" entries as they are and only add the rules section. Otherwise fill this from the ticket, PR, commits, rules files and `.intent/decisions.md`. Quote sources; do not invent.
+If the ticket has an **Intent spec** comment (from `/intent-spec`), use its scenarios, out-of-scope list and "Already decided" entries as they are, and only add the rules and checks sections. Otherwise fill this from the ticket, PR, commits, rules files and `.intent/decisions.md`. Quote sources; do not invent.
 
 ```markdown
 ## Intent
@@ -8,7 +8,7 @@ If the ticket has an **Intent spec** comment (from `/intent-spec`), use its scen
 Sources: <ticket key / PR #n / commits>
 
 ## Acceptance scenarios
-Scenario: <name>                                  [explicit | rule | inferred]
+Scenario: <name>                     [explicit | decided | assumed | rule | inferred]
   Given <state>
   When <action>
   Then <observable result>
@@ -25,7 +25,12 @@ Scenario: <name>                                  [explicit | rule | inferred]
 
 ## Rules that apply
 - "<quoted rule>" (<rules file:line>)
+
+## Checks to run
+- <id> (common | project | personal)
 ```
+
+Labels: `explicit`, `decided` and `assumed` come from an Intent spec, where `assumed` depends on an open question. `rule` comes from a rules file, and `inferred` is deduced from the code only. Only `explicit`, `decided` and `rule` scenarios can back a blocking finding.
 
 Example of a good scenario (explicit, quoted):
 

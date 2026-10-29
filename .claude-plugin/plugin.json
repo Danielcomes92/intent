@@ -1,16 +1,21 @@
 {
   "name": "intent",
-  "version": "0.3.2",
-  "description": "Work on tickets with intent: /intent-spec turns a ticket into Gherkin scenarios, open questions and a definition of done; /intent-review reviews the change against it on top of Claude Code's /code-review, keeping only evidenced findings.",
+  "version": "0.4.0",
+  "description": "Work on tickets with intent: /intent-spec turns a ticket into Gherkin scenarios, open questions and a definition of done; /intent-review reviews the change against it and common review checks on top of Claude Code's /code-review, keeping only evidenced, reproduced-where-possible findings.",
   "license": "MIT",
   "keywords": [
     "code-review",
     "gherkin",
     "intent",
-    "pull-request"
+    "pull-request",
+    "review-checks",
+    "spec"
   ],
   "skills": "./skills",
   "author": {
-    "name": "intent contributors"
-  }
+    "name": "Daniel Comes",
+    "url": "https://github.com/Danielcomes92"
+  },
+  "homepage": "https://github.com/Danielcomes92/intent",
+  "repository": "https://github.com/Danielcomes92/intent"
 }
